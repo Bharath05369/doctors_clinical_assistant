@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+    --primary: #2563eb;
+    --primary-vibrant: #3b82f6;
+    --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #cbd5e1 100%);
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(37, 99, 235, 0.1);
+    --text-main: #0f172a;
+}
+
+.main {
+    background: var(--bg-gradient);
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.stButton>button {
+    background: var(--primary);
+    color: white !important;
+    border-radius: 12px;
+    padding: 0.7rem 2rem;
+    font-weight: 600;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+
+.stButton>button:hover {
+    background: var(--primary-vibrant);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.3);
+}
+
+/* Glassmorphism for containers */
+[data-testid="stVerticalBlock"]>div>div>div>div.stContainer {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2.5rem;
+}
+
+/* Metric styling */
+[data-testid="stMetricValue"] {
+    color: var(--primary);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+/* App Header Rebranding */
+.main-header {
+    font-size: 3rem;
+    background: linear-gradient(90deg, #1e3a8a, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.hero-text {
+    font-size: 1.25rem;
+    color: #334155;
+    line-height: 1.7;
+    max-width: 800px;
+}
+
+/* Sidebar beauty */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+    border-right: 2px solid #e2e8f0;
+    padding-top: 2rem;
+}
+
+[data-testid="stSidebarNav"] {
+    background: transparent;
+    padding: 1rem;
+}
+
+[data-testid="stSidebarNav"] ul {
+    padding-top: 1rem;
+}
+
+[data-testid="stSidebarNav"] a {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: all 0.2s ease;
+}
+
+[data-testid="stSidebarNav"] a:hover {
+    background-color: #eff6ff !important;
+    color: #2563eb !important;
+}
