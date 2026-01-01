@@ -17,7 +17,8 @@ A comprehensive "Doctor's Clinical Assistant" designed to serve as a second brai
 -   **Visual Trends**: Plotly charts for lab results.
 -   **Appointment Search**: Filter appointments by Date, Doctor, or Status instantly.
 
-!(image alt){https://github.com/Bharath05369/doctors_clinical_assistant/blob/6ae37bc11c2787be3ce3157cad9fc3f634eb7837/Screenshot%202025-12-31%20193849.png}
+## Screenshot
+![Doctors Clinical Assistant Interface](https://raw.githubusercontent.com/Bharath05369/doctors_clinical_assistant/main/Screenshot%202025-12-31%20193849.png)
 
 ## 📂 Project Structure
 
