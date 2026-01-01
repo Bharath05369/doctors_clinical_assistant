@@ -36,7 +36,7 @@ A comprehensive "Doctor's Clinical Assistant" designed to serve as a second brai
 
 2.  **Run the App**:
     ```bash
-    streamlit run app.py
+    python -m streamlit run app.py
     ```
 
 3.  **Access**: Open the URL shown in the terminal (usually `http://localhost:8501`).
